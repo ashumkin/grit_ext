@@ -23,6 +23,7 @@ module GritExt
 
     # encoding message to detect encoding
     if detect && detect[:encoding]
+      detect[:encoding] = 'Windows-1251'
       message.force_encoding(detect[:encoding])
     end
 
